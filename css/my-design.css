@@ -597,6 +597,14 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+@media only screen and (max-width: 426px) {
+  .data-base-section2 .col-md-7 .card3-outer .card-outer .button-position {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .data-base-section2 .col-md-7 .card3-outer .card-outer .button-position .btn1 .btn {
   background-color: #eb600f;
 }
