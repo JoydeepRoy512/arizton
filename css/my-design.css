@@ -603,6 +603,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .data-base-section2 .col-md-7 .card3-outer .card-outer .button-position .btn1 {
+    margin-bottom: 10px;
   }
 }
 .data-base-section2 .col-md-7 .card3-outer .card-outer .button-position .btn1 .btn {
