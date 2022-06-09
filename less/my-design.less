@@ -1,7 +1,7 @@
 .banner-database {
     .background-image {
         width: 100%;
-        background-image: url(/img/Intersection-6.png);
+        background-image: url(../img/Intersection-6.png);
         padding: 60px 10px 60px 10px;
         background-color: rgba(2, 0, 36, 0);
         background-repeat: no-repeat;
@@ -443,10 +443,16 @@
             .heading {
                 text-align: center;
                 margin-bottom: 30px;
+                h3{
+                    color: #223e4f;
+                    font-weight: 700;
+                    margin-bottom: 40px;
+                    font-size: 25px;
+                }
 
                 h4 {
                     color: #223e4f;
-                    font-weight: 700;
+                    font-weight: 500;
                 }
             }
 
@@ -492,6 +498,10 @@
                         p {
                             margin-bottom: 0px;
                             font-weight: 600;
+                            @media only screen and(max-width:426px){
+                                font-size: 12px;
+                                
+                            }
                         }
                     }
                 }
@@ -516,7 +526,7 @@
 
                 h4 {
                     color: #223e4f;
-                    font-weight: 700;
+                    font-weight: 500;
                 }
             }
 
@@ -561,6 +571,10 @@
                         p {
                             margin-bottom: 0px;
                             font-weight: 600;
+                            @media only screen and(max-width:426px){
+                                font-size: 12px;
+                                
+                            }
                         }
                     }
                 }
@@ -569,8 +583,8 @@
 
         .card3-outer {
             padding-left: 40px;
-            margin-bottom: 50px;
-            margin-top: 30px;
+            margin-bottom: 70px;
+            margin-top: 70px;
 
             @media only screen and(max-width:768px) {
                 padding: 0;
@@ -598,15 +612,27 @@
                             font-size: 16px;
 
                         }
-
+                        @media only screen and(max-width:426px){
+                            margin-bottom: 20px;
+                            font-size: 15px;
+                        }
                     }
                 }
 
                 .button-position {
                     display: flex;
                     justify-content: space-around;
+                    @media only screen and(max-width:426px){
+                        flex-direction: column;
+                        align-items: center;
+                        
+                    }
 
                     .btn1 {
+                        @media only screen and(max-width:426px){
+                            margin-bottom: 15px;
+                            
+                        }
                         .btn {
                             background-color: #eb600f;
 
@@ -646,8 +672,12 @@
             }
 
             .heading {
-                h4 {
-                    font-weight: 900;
+                text-align: center;
+                h3{
+                    color: #223e4f;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    font-size: 25px;
                 }
             }
 
@@ -676,8 +706,14 @@
             .col-md-4 {
                 padding: 5px;
             }
-            h4{
-                font-weight: 900;
+            .heading{
+                text-align: center;
+                h3{
+                    color: #223e4f;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    font-size: 25px;
+                }
             }
 
             .content-outer {
@@ -686,7 +722,6 @@
 
                 .heading {
                     padding: 10px;
-                    margin-bottom: 20px;
 
                     @media only screen and(max-width:768px) {
                         margin-bottom: 5px;
@@ -696,6 +731,9 @@
                     h4 {
                         color: #f3960c;
                         font-weight: 900;
+                        margin-bottom: 0px;
+                        font-size: 15px;
+                        margin-top: 5px;
                         br{
                             display: none;
                             @media only screen and(max-width:426px) {
@@ -769,19 +807,28 @@
                             font-weight: 900;
 
                             &:hover {
-                                filter: brightness(80%);
+                                background-color: #eb600f;
+                                color: #FFF;
                             }
                         }
                     }
                 }
             }
-
+            .col-xs-12{
+                @media only screen and(max-width:426px){
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
             .content-outer-x {
 
                 border: 1px solid #000;
+                @media only screen and(max-width:426px) {
+                    width: 50%;
+                }
                 .heading {
                     padding: 10px;
-                    margin-bottom: 20px;
 
                     @media only screen and(max-width:768px) {
                         margin-bottom: 5px;
@@ -791,6 +838,9 @@
                     h4 {
                         color: #f3960c;
                         font-weight: 900;
+                        margin-bottom: 0px;
+                        font-size: 14px;
+                        margin-top: 5px;
 
                         @media only screen and(max-width:768px) {
                             font-size: 14px;
