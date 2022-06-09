@@ -538,10 +538,10 @@
         <div class="container">
             <ul class="list-inline category-menu">
                 <li class="nav-item active datao"><div class="mo">DATA POINTS COVERED<i class="fas fa-play"></i></div>
-                <li class="nav-item marketo"><div class="mo" >MARKET OVERVIEW</div></li>
-                <li class="nav-item priceo"><div class="mo">PRICING</div></li>
-                <li class="nav-item"><div class="mo">SNAPSHOT</div></li>
-                <li class="nav-item"><div class="mo">TABLE OF CONTENTS</div></li>
+                <li class="nav-item marketo"><div class="mo" >MARKET OVERVIEW <i class="fas"></i> </div></li>
+                <li class="nav-item priceo"><div class="mo">PRICING<i class="fas"></i></div></li>
+                <li class="nav-item"><div class="mo">SNAPSHOT<i class="fas"></i></div></li>
+                <li class="nav-item"><div class="mo">TABLE OF CONTENTS<i class="fas"></i></div></li>
                 <li>
                     <div class="btn-position">
                         <button class="btn btn-warning">GET SAMPLE NOW <i class="fas fa-play"></i></button>
@@ -649,6 +649,9 @@
                 <div class="col-md-7 col-sm-7">
                     <div class="card1-outer">
                         <div class="heading" id="data-center">
+                            <h3>
+                                DATA POINTS COVERED
+                            </h3>
                             <h4>
                                 EXISTING DATA CENTER
                             </h4>
@@ -893,7 +896,7 @@
                     </div>
                     <div class="card-4">
                         <div class="heading" id="market-overview">
-                            <h4> MARKET OVERVIEW</h4>
+                            <h3> MARKET OVERVIEW</h3>
                         </div>
                         <div class="text">
                             <p>The Philippines Data Center Market was valued at USD 298 million in 2021 and is expected
@@ -923,7 +926,7 @@
                     </div>
                     <div class="card5">
                         <div class="heading" id="price">
-                            <h4> PRICING</h4>
+                            <h3> PRICING</h3>
                         </div>
                         <div class="row">
                             <div class="col-md-4 col-sm-4 col-xs-6">
@@ -1414,11 +1417,14 @@
             // If the clicked element has the active class, remove the active class from EVERY .nav-link>.state element
             if ($(this).hasClass("active")) {
                 $(this).addClass("active");
+                $(this).find(".fas").addClass("fa-play");
 
             }
             // Else, the element doesn't have the active class, so we remove it from every element before applying it to the element that was clicked
             else {
                 $(".nav-item").removeClass("active");
+                $(".nav-item").find(".fas").removeClass("fa-play");
+                $(this).find(".fas").addClass("fa-play");
                 $(this).addClass("active");
             }
 
