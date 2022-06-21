@@ -2,9 +2,14 @@
   width: 100%;
   background-image: url(../img/x.jpg);
   padding: 60px 10px 60px 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: rgba(2, 0, 36, 0);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media only screen and (max-width: 768px) {
   .banner-database .background-image {
@@ -40,31 +45,47 @@
     font-size: 20px;
   }
 }
-.banner-database .background-image .content-outer .text {
-  margin-top: 40px;
+.banner-database .background-image .p-0 {
+  padding: 0px !important;
+}
+.banner-database .background-image .text {
+  margin-top: 20px;
   color: #FFF;
   font-weight: 600;
+  background: linear-gradient(116deg, #0f4a86 95%, #fff0 0%);
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.banner-database .background-image .text p {
+  margin-left: 40px;
+  padding: 10px;
+  margin-bottom: 0px;
 }
 @media only screen and (max-width: 768px) {
-  .banner-database .background-image .content-outer .text {
+  .banner-database .background-image .text {
     font-size: 12px;
   }
 }
 @media only screen and (max-width: 426px) {
-  .banner-database .background-image .content-outer .text {
+  .banner-database .background-image .text {
     font-size: 7px;
     margin-top: 30px;
   }
-  .banner-database .background-image .content-outer .text p {
+  .banner-database .background-image .text p {
     margin-bottom: 0px;
   }
 }
-.banner-database .background-image .content-outer .text span img {
+.banner-database .background-image .text span img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
 @media only screen and (max-width: 768px) {
-  .banner-database .background-image .content-outer .text span img {
+  .banner-database .background-image .text span img {
     width: 7%;
     height: 7%;
   }
