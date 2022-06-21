@@ -93,6 +93,9 @@
     height: 7%;
   }
 }
+.content-outer2 {
+  margin-top: 20px;
+}
 @media only screen and (max-width: 426px) {
   .content-outer2 {
     margin-top: 20px;
