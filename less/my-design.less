@@ -3,9 +3,11 @@
         width: 100%;
         background-image: url(../img/x.jpg);
         padding: 60px 10px 60px 10px;
+        object-fit: cover;
         background-color: rgba(2, 0, 36, 0);
         background-repeat: no-repeat;
-        background-size: 100% auto;
+        background-size: 100% 100%;
+        height: fit-content;
 
         @media only screen and(max-width:768px) {
             padding-top: 40px;
@@ -23,6 +25,7 @@
             }
 
             .heading {
+                margin-left: 70px;
                 h2 {
                    
                     font-size: 35px;
@@ -51,38 +54,54 @@
                 }
 
             }
+            
+            
+        }
+        .p-0{
+            padding: 0px !important;
+        }
+        .text {
+            margin-top: 20px;
+            color: #FFF;
+            font-weight: 600;
+            background: linear-gradient(116deg,  #0f4a86 95%, #fff0 0%,);
+            z-index: -1;
+            display: flex;
+            align-items: center;
+            
+            p{
+                margin-left: 100px;
+                padding: 10px;
+                margin-bottom: 0px;
+            }
+            
 
-            .text {
-                margin-top: 40px;
-                color: #FFF;
-                font-weight: 600;
+            @media only screen and(max-width:768px) {
+                font-size: 12px;
 
-                @media only screen and(max-width:768px) {
-                    font-size: 12px;
-
+            }
+            @media only screen and(max-width:426px) {
+                font-size: 7px;
+                margin-top: 30px;
+                p{
+                    margin-bottom: 0px;
                 }
-                @media only screen and(max-width:426px) {
-                    font-size: 7px;
-                    margin-top: 30px;
-                    p{
-                        margin-bottom: 0px;
-                    }
-                }
+            }
 
-                span {
-                    img {
+            span {
+                img {
 
-                        filter: brightness(0) invert(1);
+                    filter: brightness(0) invert(1);
 
-                        @media only screen and(max-width:768px) {
-                            width: 7%;
-                            height: 7%;
+                    @media only screen and(max-width:768px) {
+                        width: 7%;
+                        height: 7%;
 
-                        }
                     }
                 }
             }
         }
+        
 
         // .content-outer2 {
         //     @media only screen and(max-width:426px) {

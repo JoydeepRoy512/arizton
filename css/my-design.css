@@ -31,6 +31,9 @@
     border-right: none;
   }
 }
+.banner-database .background-image .content-outer .heading {
+  margin-left: 70px;
+}
 .banner-database .background-image .content-outer .heading h2 {
   font-size: 35px;
   font-weight: 700;
@@ -62,7 +65,7 @@
           align-items: center;
 }
 .banner-database .background-image .text p {
-  margin-left: 40px;
+  margin-left: 100px;
   padding: 10px;
   margin-bottom: 0px;
 }
