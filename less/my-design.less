@@ -2,7 +2,7 @@
     .background-image {
         width: 100%;
         background-image: url(../img/x.jpg);
-        padding: 60px 10px 60px 10px;
+        padding: 60px 10px 60px 0px;
         object-fit: cover;
         background-color: rgba(2, 0, 36, 0);
         background-repeat: no-repeat;
@@ -16,6 +16,7 @@
         }
         @media only screen and(max-width:426px) {
            padding-bottom: 25px;
+           background-size: auto;
         }
 
         .content-outer {
@@ -26,6 +27,9 @@
 
             .heading {
                 margin-left: 70px;
+                @media only screen and(max-width:426px) {
+                    margin-left: 30px;
+                }
                 h2 {
                    
                     font-size: 35px;
@@ -64,15 +68,26 @@
             margin-top: 20px;
             color: #FFF;
             font-weight: 600;
-            background: linear-gradient(116deg,  #0f4a86 95%, #fff0 0%,);
+            background: linear-gradient(116deg,  #0f4a86 96%, #fff0 0%,);
             z-index: -1;
             display: flex;
             align-items: center;
+
+            @media only screen and(max-width:991px) {
+                background: linear-gradient(108deg, #0f4a86 56%, #fff0 0%);
+            }
+            @media only screen and(max-width:426px){
+                background: linear-gradient(108deg, #0f4a86 95%, #fff0 0%);
+            }
             
             p{
                 margin-left: 100px;
                 padding: 10px;
                 margin-bottom: 0px;
+                @media only screen and(max-width:991px) {
+                    margin-left: 50px;
+                    
+                }
             }
             
 
@@ -280,7 +295,7 @@
 .tab-button {
     position: sticky;
     top: 0;
-    padding: 40px;
+    padding: 20px;
     margin-top: 20px;
     z-index: 1;
     background-color: #FFF;
@@ -289,7 +304,7 @@
     }
 
     @media only screen and(max-width:768px) {
-        padding: 40px 0px;
+        padding: 20px 0px;
 
     }
 
@@ -383,7 +398,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
 
-    .col-md-5 {
+    .col-md-4 {
         position: sticky;
         top: 20%;
         @media only screen and(max-width:426px) {
@@ -407,41 +422,52 @@
                 display: flex;
                 padding: 10px;
                 border: 1px solid #f3960c;
+                @media only screen and(max-width:768px) {
+                    flex-direction: column;
+                }
+
+                
 
                 .image {
                     // height: 150px;
-                    width: 250px;
+                    width: 326px;
 
                     @media only screen and(max-width:768px) {
-                        width: 300px;
+                        width: 100%
 
                     }
 
                     img {
                         width: 100%;
-                        height: 100%;
+                        height: auto;
                     }
                 }
 
                 .text {
                     margin-left: 15px;
                     margin-top: 6px;
-                    font-size: 16px;
+                    font-size: 13.5px;
                     color: #0f4a86;
                     font-weight: 700;
 
                     @media only screen and(max-width:768px) {
-                        font-size: 12px;
+                        font-size: 11px;
+                        margin-left: 6px;
+                        font-weight: 600;
 
                     }
                     @media only screen and(max-width:426px) {
                        font-size: 15px;
+                       
                     }
 
                     .btn-position {
                         display: flex;
                         justify-content: end;
                         margin-top: 0px;
+                        @media only screen and(max-width:768px){
+                            justify-content: start;
+                        }
 
                         .btn-warning {
 
@@ -457,6 +483,11 @@
         }
 
         .part2 {
+
+            margin-top: 30px;
+            @media only screen and(max-width:768px) {
+                margin-top: 0px;
+            }
             .col-md-4 {
                 padding: 0px 10px !important;
             }
@@ -586,7 +617,7 @@
         }
     }
 
-    .col-md-7 {
+    .col-md-8 {
         border-left: 2px solid #000;
         @media only screen and(max-width:426px) {
             border-left: none;
@@ -1062,7 +1093,7 @@
                 }
 
                 .button-position {
-                    padding: 33px 0px 33px 0px;
+                    padding: 26px 0px 26px 0px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
